@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+
+<body style="display: block;">
+    <div class="container-fluid p-4">
+        <div class="alert alert-success" role="alert">
+            <h4 class="alert-heading"> The Mail is identified as ham mail</h4>
+            <p>Relax, this email looks good! It's passed our spam filters and should be safe to open.</p>
+          </div>
+        <a href="{{ url_for('welcome') }}"><button class="btn btn-primary">Go back to Welcome page</button></a>
+    </div>
+ 
+
+</body>
+
+</html>
